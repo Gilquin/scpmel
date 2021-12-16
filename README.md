@@ -16,10 +16,11 @@ SCPMel : A Pytorch-friendly package providing tools for building 1D PINN models
 
 SCPMel is a Pytorch-based package providing tools for building 1D Physically
 Informed Neural Networks (PINN) models. SCPMel is composed of several submodules, 
-using any of these submodule requires an explicit import. For instance,
+using any of these submodule can be made through implicit or explicit import. For instance,
 
 ``` python
-import SCPMel.integrate
+import scpmel.integrate
+from scpmel import integrate
 ```
 The following submodules are available:
 
@@ -67,7 +68,7 @@ Prior to build the remote conda environnement, a conda distribution needs to be 
 
 Once conda has been made available, the remote conda environnement is built through the following steps:
 
-1. clone the repository: `git clone https://github.com/gilquin/SCPMel.git`
+1. clone the repository: `git clone https://github.com/Gilquin/scpmel.git`
 2. create the env: `$ conda env create -f [path_to_yaml]/[yaml_file].yml -p [path_to_env]/scpmel`
 3. append it to your local list: `$ conda config --append envs_dirs [path_to_env]`
 
