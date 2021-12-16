@@ -1,0 +1,8 @@
+__version__ = '0.0.1'
+__author__ = 'See AUTHORS'
+__copyright__ = 'Copyright 2021, Centre de Recherche Inria 655, avenue de l'Europe 38334 Saint Ismier Cedex'
+__credits__ = 'See CREDITS'
+__license__ = 'GNU GPL v3, CeCILLv2'
+__maintainer__ = 'Laurent Gilquin'
+__email__ = 'lgilquin@free.fr'
+__status__ = 'Production'

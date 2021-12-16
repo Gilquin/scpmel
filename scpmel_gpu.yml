@@ -1,0 +1,20 @@
+name: scpmel
+channels:
+  - anaconda
+  - defaults
+  - pytorch
+dependencies:
+  - cudatoolkit==10.2
+  - matplotlib-base
+  - nb_conda_kernels
+  - numpy
+  - numpy-base
+  - pip
+  - psutil
+  - python==3.8.5
+  - pytorch==1.10
+  - scipy
+  - spyder-kernels
+  - pip:
+    - h5py
+    - torchinfo

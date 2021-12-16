@@ -1,0 +1,20 @@
+axes.formatter.use_mathtext: True
+
+lines.linewidth : 1.5
+lines.markersize : 6
+
+text.usetex: True
+font.family: Fira Sans
+
+axes.titlesize : 18
+axes.labelsize : 18
+xtick.labelsize : 18
+ytick.labelsize : 18
+legend.fontsize : 18
+
+text.color: 23373B
+legend.edgecolor: 40656c
+xtick.color: 23373B
+ytick.color: 23373B
+axes.labelcolor: 23373B
+axes.edgecolor: 23373B

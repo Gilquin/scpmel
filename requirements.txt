@@ -1,0 +1,23 @@
+# NOTE: these requirements should be installed offline in a virtual conda
+# environnement prior to installing the package. Please consult the README file for
+# more details. This ensures a "good" consistency between packages version.
+# If you really want to install directly through:
+#	pip install -r requirements.txt
+# please take care to comment out:
+#  * cudatoolkit=10.2, if you want to build pytorch with GPU support
+#  * cpuonly, if you want to build pytorch only with CPU support
+
+#cudatoolkit=10.2
+#cpuonly
+h5py
+matplotlib-base
+nb_conda_kernels
+numpy
+numpy-base
+pip
+psutil
+python>=3.8.5
+pytorch>=1.10
+scipy
+spyder-kernels
+torchinfo
