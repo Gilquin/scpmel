@@ -1,6 +1,7 @@
 """
 brownian() implements one dimensional Brownian motion (i.e. the Wiener process).
-https://scipy.github.io/old-wiki/pages/Cookbook/BrownianMotion.html
+Function is copied from:
+    https://scipy.github.io/old-wiki/pages/Cookbook/BrownianMotion.html
 """
 
 # global imports

@@ -1,13 +1,9 @@
 """
-Created on Tue Jul 27 14:20:16 2021
-
 A pytorch-friendly implementation of the SciPy _ivp routines:
     https://github.com/scipy/scipy/blob/v1.7.0/scipy/integrate/_ivp/common.py
+    
 The structures follows the SciPy implementation with minor changes
-
-@author: Laurent Gilquin
 """
-
 
 from warnings import warn
 import torch

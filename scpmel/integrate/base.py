@@ -1,12 +1,9 @@
 """
-Created on Tue Jul 27 11:29:32 2021
-
 A pytorch-friendly implementation of the SciPy _ivp OdeSolver and DenseOutput
 classes :
     https://github.com/scipy/scipy/blob/v1.7.0/scipy/integrate/_ivp/base.py
+    
 The structures follows the SciPy implementation with minor changes.
-
-@author: Laurent Gilquin
 """
 
 import torch

@@ -1,11 +1,9 @@
 # global imports
 import gc
 import os
-import torch
-import gc
 import psutil
-import os
 import sys
+import torch
 
 def _checkfile(fname, overwrite):
     if os.path.isfile(fname) and not overwrite:

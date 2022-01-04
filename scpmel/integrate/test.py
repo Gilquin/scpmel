@@ -1,9 +1,5 @@
 """
-Created on Tue Aug 31 12:07:48 2021
-
 Tests of solve_ip and IVP calls with toy models (borrowed from scipy and others).
-
-@author: Laurent Gilquin
 """
 
 import torch

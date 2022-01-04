@@ -1,12 +1,9 @@
 """
-Created on Tue Jul 27 11:29:32 2021
-
 A pytorch-friendly implementation of the SciPy solve_ivp function :
     https://github.com/scipy/scipy/blob/v1.7.0/scipy/integrate/_ivp/ivp.py
+
 The structures follows the SciPy implementation with minor changes (ex: removed
 intepolants from solve_ip output, etc ...).
-
-@author: Laurent Gilquin
 """
 
 import inspect

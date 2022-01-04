@@ -1,6 +1,4 @@
 """
-@author: Laurent Gilquin
-
 Provides clipping class to restrict weights of a layer after a gradient update.
 This is currently the only way to "apply" constraints to the weights in Pytorch.
 The only alternative is to clip the gradient update that is modifying the

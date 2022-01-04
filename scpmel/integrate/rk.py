@@ -1,11 +1,8 @@
 """
-Created on Tue Jul 27 11:29:32 2021
-
 A pytorch-friendly implementation of the SciPy Runge-Kutta methods and some others:
     https://github.com/scipy/scipy/blob/v1.7.0/scipy/integrate/_ivp/rk.py
-The structures (classes, methods, ...) follows the SciPy implementation.
 
-@author: Laurent Gilquin
+The structures (classes, methods, ...) follows the SciPy implementation.
 """
 
 import torch
