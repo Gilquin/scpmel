@@ -1,5 +1,5 @@
 """ suite of tool utilities."""
-from .progressbar import AverageMeter, ProgressMeter
-from .gc_utils import cpuStats, memProc, memReport
-from .logger import Logger, LoggerMonitor
-from .misc import *
+from ._progressbar import AverageMeter, ProgressMeter
+from ._gc_utils import cpuStats, memProc, memReport
+from ._logger import Logger, LoggerMonitor
+from ._misc import *
