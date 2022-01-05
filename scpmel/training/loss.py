@@ -1,6 +1,9 @@
 # global imports
 import torch
 from torch.nn.modules.loss import _Loss
+# relative import
+from .. import les
+from ._layers import ConvLayer
 
 __all__ = ["get_loss", "KineticLoss"]
 
@@ -63,24 +66,23 @@ class KineticLoss(_Loss):
             return res
 
 
-# TODO: Once FinDiff has been included change that
 # H1 loss function
-# class H1Loss(_Loss):
+class H1Loss(_Loss):
 
-#     def __init__(self, dx, order, reduction='mean'):
-#         super(H1Loss, self).__init__(None, None, reduction)
-#         if self.reduction not in ["none", "sum", "mean"]:
-#             raise ValueError("{} is not a valid value for reduction".format(reduction))
-#         kernel = get_stencil(dx, order)
-#         self.derivative = torch_utils.ConvLayer(kernel)
+    def __init__(self, dx, acc, reduction='mean'):
+        super(H1Loss, self).__init__(None, None, reduction)
+        if self.reduction not in ["none", "sum", "mean"]:
+            raise ValueError("{} is not a valid value for reduction".format(reduction))
+        kernel = les.get_stencil(dx, order=1, acc=acc, scheme="center")
+        self.derivative = ConvLayer(kernel)
 
-#     def forward(self, outputs, targets):
-#         diff = outputs - targets
-#         grad = self.derivative(diff)
-#         res = (diff)**2 + grad**2
-#         if self.reduction == "mean":
-#             return torch.mean(res)
-#         elif self.reduction == "sum":
-#             return torch.sum(res)
-#         else:
-#             return res
+    def forward(self, outputs, targets):
+        diff = outputs - targets
+        grad = self.derivative(diff)
+        res = (diff)**2 + grad**2
+        if self.reduction == "mean":
+            return torch.mean(res)
+        elif self.reduction == "sum":
+            return torch.sum(res)
+        else:
+            return res

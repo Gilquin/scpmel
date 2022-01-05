@@ -1,3 +1,4 @@
 # Generic module
-from .filter import *
-from .spectral import *
+from ._coeffs import get_stencil
+from ._filter import *
+from ._spectral import *

@@ -5,8 +5,9 @@ A pytorch-friendly implementation of the SciPy _ivp routines:
 The structures follows the SciPy implementation with minor changes
 """
 
-from warnings import warn
+# global imports
 import torch
+from warnings import warn
 
 FMAX = torch.finfo(torch.float32).max
 EPS = torch.finfo(torch.float32).eps

@@ -3,7 +3,7 @@ import torch
 import numpy as np
 import scipy.signal as ssp
 # relative import
-from .misc import _to_tensor
+from ._misc import _to_tensor
 
 __all__ = ["correlate", "energy_spectrum"]
 

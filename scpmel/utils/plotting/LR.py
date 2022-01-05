@@ -2,7 +2,7 @@
 import matplotlib.pyplot as plt
 plt.style.use('paper') # mplstyle
 
-def LR_plot(loss_data, lr_data, **kwargs):
+def lr_plot(loss_data, lr_data, **kwargs):
     """
     Draw the loss and learning rate data on two y-axes that share the same x-axis.
 

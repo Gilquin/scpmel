@@ -1,2 +1,2 @@
 # Generic module
-from .reduction import SubspaceOptimizer
+from ._reduction import SubspaceOptimizer

@@ -1,9 +1,9 @@
 # global imports
+from collections import OrderedDict
+from decimal import Decimal
 import errno
 import inspect
 import os
-from collections import OrderedDict
-from decimal import Decimal
 import torchinfo
 
 __all__ = ['mkdir_p', 'format_time', 'format_state_dict', 'get_args', "summary"]

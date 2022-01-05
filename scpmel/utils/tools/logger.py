@@ -10,7 +10,7 @@ https://github.com/LiyuanLucasLiu/RAdam/blob/master/cifar_imagenet/utils/logger.
 # global imports
 import matplotlib.pyplot as plt
 import numpy as np
-
+plt.style.use('paper') # mplstyle
 
 def _plot_overlap(logger, names=None):
     names = logger.names if names == None else names

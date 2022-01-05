@@ -5,11 +5,13 @@ A pytorch-friendly implementation of the SciPy Runge-Kutta methods and some othe
 The structures (classes, methods, ...) follows the SciPy implementation.
 """
 
+# global import
 import torch
-from .base import OdeSolver, DenseOutput
-from .common import (validate_max_step, validate_tol, select_initial_step,
+# relative imports
+from ._base import OdeSolver, DenseOutput
+from ._common import (validate_max_step, validate_tol, select_initial_step,
                      norm, warn_extraneous, validate_first_step)
-from .common import EPS, FMAX
+from ._common import EPS, FMAX
 
 
 SAFETY = 0.9 # multiplicative factor for steps computed from asymptotic behaviour of errors

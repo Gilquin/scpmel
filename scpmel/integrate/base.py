@@ -6,6 +6,7 @@ classes :
 The structures follows the SciPy implementation with minor changes.
 """
 
+# global import
 import torch
 
 

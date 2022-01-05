@@ -3,7 +3,7 @@ import torch
 import numpy as np
 # relative import
 from .. import training
-from .misc import _to_tensor
+from ._misc import _to_tensor
 
 
 __all__ = ["get_filter", "filtr"]

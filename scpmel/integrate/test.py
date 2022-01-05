@@ -3,7 +3,7 @@ Tests of solve_ip and IVP calls with toy models (borrowed from scipy and others)
 """
 
 import torch
-from .ivp import IVP, solve_ivp, METHODS
+from ._ivp import IVP, solve_ivp, METHODS
 #%%
 # Basic exponential decay 
 def exponential_decay(t, y): return -0.5 * y

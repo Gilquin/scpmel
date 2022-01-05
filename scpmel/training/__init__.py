@@ -1,7 +1,7 @@
 # Generic module
-from .clippers import *
-from .dataset import *
-from .layers import *
-from .loss import *
-from .params import *
-from .training import *
+from ._clippers import *
+from ._dataset import *
+from ._layers import *
+from ._loss import *
+from ._params import *
+from ._training import *

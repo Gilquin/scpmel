@@ -6,13 +6,14 @@ The structures follows the SciPy implementation with minor changes (ex: removed
 intepolants from solve_ip output, etc ...).
 """
 
+# global import
 import inspect
 import torch
-
-from .rk import (HEUNEULER, RK23, SSPRK23, RK5SSP3, RK45_DP, RK2, RK3, SSPRK3, RK4, RK4_38, RK5_3, HEUN2, HEUN3,
+# relative imports
+from ._rk import (HEUNEULER, RK23, SSPRK23, RK5SSP3, RK45_DP, RK2, RK3, SSPRK3, RK4, RK4_38, RK5_3, HEUN2, HEUN3,
                  RALSTON3, RALSTON4, EULER)
-from .base import OdeSolver
-from .common import close_to_any
+from ._base import OdeSolver
+from ._common import close_to_any
 
 
 METHODS = {'HEUNEULER': HEUNEULER, 'RK23': RK23, 'SSPRK23': SSPRK23, 'RK5SSP3': RK5SSP3,
