@@ -38,8 +38,8 @@ def save_gradflow(model, path):
     for idx, (n, p) in enumerate(model.named_parameters()):
         if(p.requires_grad):
             layers.append(idx)
-            ave_grads.append(p.grad.abs().mean())
-            max_grads.append(p.grad.abs().max())
+            ave_grads.append(p.grad.abs().mean().cpu())
+            max_grads.append(p.grad.abs().max().cpu())
     # plot formatting
     fig, ax = plt.subplots(figsize=(10,8))
     ax.bar(np.arange(len(max_grads)), max_grads, alpha=0.5, lw=1, color="c")
