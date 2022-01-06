@@ -1,4 +1,5 @@
 # Generic module
+from ._checkpoint import *
 from ._clippers import *
 from ._dataset import *
 from ._layers import *
