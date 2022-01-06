@@ -20,5 +20,3 @@ conda activate scpmel
 launch_cmd=$python $folder_path/main_gradients.py --epochs 4 --batch-size 64\
  --save_dir $save_path --seed 1990 --gpu 0 $data_path
 echo"${launch_cmd}"
-# rename samples and gradient files name
-cd $save_path

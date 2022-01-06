@@ -64,7 +64,6 @@ def load_model(path, cutoff, dt, verbose=True):
     # instantiate subgrid model
     TauNet = EnhancedSmagorinsky(cutoff_config['cutoff'], scale, acc=4, bounds=[0.0, 0.2])
     model.make_exogenous({'tau': TauNet})
-    # model.make_exogenous({'tau': lambda x: 0.0})
 
     # set time configuration
     time_horizon = float(time_config["t_step"])
