@@ -6,7 +6,7 @@ import inspect
 import os
 import torchinfo
 
-__all__ = ['mkdir_p', 'format_time', 'format_state_dict', 'get_args', "summary"]
+__all__ = ["mkdir_p", "format_time", "format_state_dict", "get_args", "summary"]
 
 def mkdir_p(path):
     '''make dir if not exist'''
